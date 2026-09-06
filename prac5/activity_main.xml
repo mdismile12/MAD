@@ -75,9 +75,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        android:textSize="48sp"
+        android:text="Result: 0"
+        android:textSize="28sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="98dp"
         tools:layout_editor_absoluteY="114dp" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
