@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://android.com"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:importantForAutofill="no"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_above="@id/editTextTextEmailAddress2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        tools:ignore="HardcodedText" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:importantForAutofill="no"
+        android:layout_below="@id/editTextTextEmailAddress2"
+        android:layout_marginBottom="24dp"
+        tools:ignore="HardcodedText" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:layout_below="@id/editTextTextPassword3"
+        tools:ignore="HardcodedText" />
+
+</RelativeLayout>
