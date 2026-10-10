@@ -2,15 +2,20 @@ package com.example.prac_6;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.Toast;
+import android.content.Intent;
+import android.net.Uri;
+import androidx.core.app.ActivityCompat;
+import android.Manifest;
+import android.content.pm.PackageManager;
+
+
 import androidx.appcompat.app.AppCompatActivity;
 public class PageHome extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        
+        setContentView(R.layout.home_page);
+
         Button callButton = findViewById(R.id.call);
 
         callButton.setOnClickListener(new View.OnClickListener() {
