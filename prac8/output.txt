@@ -1,0 +1,44 @@
+========================================================================
+GTU SEM 7 MAD (Sub Code: 3170726) - Practical 8
+Title: Develop a simple application with one Edit Text so that the user can write 
+       some text in it. Create a button called "Convert Text to Speech" that 
+       converts the user input text into voice.
+========================================================================
+
+STEPS TO RUN IN ANDROID STUDIO (COLLEGE PC):
+------------------------------------------------------------------------
+1. Open Android Studio and click on "New Project".
+2. Select "Empty Views Activity" template (Do NOT select Jetpack Compose / Empty Activity).
+3. Set the project configuration as follows:
+   - Name: prac_8
+   - Package Name: com.example.prac_8
+   - Save Location: Any directory on college PC
+   - Language: Java
+   - Minimum SDK: API 21 (Android 5.0) or default
+4. Click "Finish" and wait for Gradle build to complete.
+
+5. UPDATE LAYOUT XML FILE:
+   - Go to app -> src -> main -> res -> layout -> activity_main.xml.
+   - Switch to 'Code' view and replace all content with 'activity_main.xml'.
+
+6. UPDATE JAVA FILE:
+   - Go to app -> src -> main -> java -> com.example.prac_8 -> MainActivity.java.
+   - Replace all content with 'MainActivity.java'.
+
+7. RUN THE APPLICATION:
+   - Connect a device with working audio / speaker or launch Emulator.
+   - Click the 'Run' button (Green play button) or press Shift + F10.
+
+------------------------------------------------------------------------
+EXPECTED OUTPUT / SCREENSHOT GUIDE FOR PRACTICAL WORKBOOK:
+------------------------------------------------------------------------
+1. Initial Screen:
+   - Screen displays an EditText box in the center with hint: "Enter text here to convert to speech".
+   - Below the EditText, a button titled "Convert Text to Speech" is displayed.
+
+2. Empty Input Validation:
+   - If the user clicks the "Convert Text to Speech" button without typing anything, a Toast message appears: "Please enter some text".
+
+3. Speech Synthesis Output:
+   - When the user types text (e.g., "Hello welcome to MAD Practical 8") into the EditText and clicks "Convert Text to Speech", the phone's speaker reads out loud the typed text via Android TextToSpeech engine.
+========================================================================

@@ -1,0 +1,56 @@
+========================================================================
+GTU SEM 7 MAD (Sub Code: 3170726) - Practical 7
+Title: Create an Android application to demonstrate Options Menu.
+========================================================================
+
+STEPS TO RUN IN ANDROID STUDIO (COLLEGE PC):
+------------------------------------------------------------------------
+1. Open Android Studio and click on "New Project".
+2. Select "Empty Views Activity" template (Do NOT select Jetpack Compose / Empty Activity).
+3. Set the project configuration as follows:
+   - Name: prac_7
+   - Package Name: com.example.prac_7
+   - Save Location: Any directory on college PC
+   - Language: Java
+   - Minimum SDK: API 21 (Android 5.0) or default
+4. Click "Finish" and wait for Gradle build to complete.
+
+5. CREATE MENU XML FILE:
+   - Right-click on 'res' folder -> New -> Android Resource Directory.
+   - Resource type: select 'menu' -> Click OK.
+   - Right-click on 'menu' folder -> New -> Menu Resource File.
+   - File name: options_menu.xml
+   - Replace its contents with the code from 'options_menu.xml'.
+
+6. UPDATE LAYOUT XML FILE:
+   - Go to app -> src -> main -> res -> layout -> activity_main.xml.
+   - Switch to 'Code' view and replace all content with 'activity_main.xml'.
+
+7. UPDATE JAVA FILE:
+   - Go to app -> src -> main -> java -> com.example.prac_7 -> MainActivity.java.
+   - Replace all content with 'MainActivity.java'.
+
+8. RUN THE APPLICATION:
+   - Click the 'Run' button (Green play button) or press Shift + F10.
+   - Select an Emulator or connected Android Device.
+
+------------------------------------------------------------------------
+EXPECTED OUTPUT / SCREENSHOT GUIDE FOR PRACTICAL WORKBOOK:
+------------------------------------------------------------------------
+1. Initial Screen:
+   - Displays a top action bar with a 3-dot (⋮) options menu icon at top-right.
+   - Center TextView shows: "Select an option from top right menu".
+
+2. Menu Dropdown Screen:
+   - Clicking the 3-dot icon opens the Options Menu displaying:
+     * Settings
+     * About Us
+     * Contact Us
+     * Exit
+
+3. Item Click Screenshots:
+   - Click 'Settings': Center text changes to "Selected: Settings" with Toast "Settings Clicked".
+   - Click 'About Us': Center text changes to "Selected: About Us" with Toast "About Us Clicked".
+   - Click 'Contact Us': Center text changes to "Selected: Contact Us" with Toast "Contact Us Clicked".
+   - Click 'Exit': Toast shows "Exiting application..." and the app closes.
+========================================================================

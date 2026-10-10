@@ -1,0 +1,55 @@
+========================================================================
+GTU SEM 7 MAD (Sub Code: 3170726) - Practical 10
+Title: Develop an android application to store and retrieve data locally 
+       using SharedPreferences
+========================================================================
+
+STEPS TO RUN IN ANDROID STUDIO (COLLEGE PC):
+------------------------------------------------------------------------
+1. Open Android Studio and click on "New Project".
+2. Select "Empty Views Activity" template (Do NOT select Jetpack Compose / Empty Activity).
+3. Set the project configuration as follows:
+   - Name: prac_10
+   - Package Name: com.example.prac_10
+   - Save Location: Any directory on college PC
+   - Language: Java
+   - Minimum SDK: API 21 (Android 5.0) or default
+4. Click "Finish" and wait for Gradle build to complete.
+
+5. UPDATE LAYOUT XML FILE:
+   - Go to app -> src -> main -> res -> layout -> activity_main.xml.
+   - Switch to 'Code' view and replace all content with 'activity_main.xml'.
+
+6. UPDATE JAVA FILE:
+   - Go to app -> src -> main -> java -> com.example.prac_10 -> MainActivity.java.
+   - Replace all content with 'MainActivity.java'.
+
+7. RUN THE APPLICATION:
+   - Click the 'Run' button (Green play button) or press Shift + F10.
+
+------------------------------------------------------------------------
+EXPECTED OUTPUT / SCREENSHOT GUIDE FOR PRACTICAL WORKBOOK:
+------------------------------------------------------------------------
+1. Initial Screen:
+   - Heading: "SharedPreferences Demo".
+   - Input fields: "Enter Name", "Enter Email".
+   - Three buttons: "Save", "Retrieve", "Clear".
+   - Center TextView displays: "Data will be shown here".
+
+2. Saving Data:
+   - Enter Name (e.g. "John Doe") and Email (e.g. "john@example.com").
+   - Click "Save" button.
+   - Toast displays: "Data Saved Successfully", and input fields reset.
+
+3. Retrieving Data:
+   - Click "Retrieve" button.
+   - TextView updates to show retrieved key-value data:
+     Retrieved Data:
+     Name: John Doe
+     Email: john@example.com
+
+4. Clearing Data:
+   - Click "Clear" button.
+   - Toast displays: "Cleared SharedPreferences".
+   - TextView updates to show: "Data Cleared!".
+========================================================================

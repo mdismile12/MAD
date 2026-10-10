@@ -1,0 +1,51 @@
+========================================================================
+GTU SEM 7 MAD (Sub Code: 3170726) - Practical 9
+Title: Get user's current location using Location Service and display in Textview
+========================================================================
+
+STEPS TO RUN IN ANDROID STUDIO (COLLEGE PC):
+------------------------------------------------------------------------
+1. Open Android Studio and click on "New Project".
+2. Select "Empty Views Activity" template (Do NOT select Jetpack Compose / Empty Activity).
+3. Set the project configuration as follows:
+   - Name: prac_9
+   - Package Name: com.example.prac_9
+   - Save Location: Any directory on college PC
+   - Language: Java
+   - Minimum SDK: API 21 (Android 5.0) or default
+4. Click "Finish" and wait for Gradle build to complete.
+
+5. UPDATE MANIFEST FILE:
+   - Go to app -> src -> main -> AndroidManifest.xml.
+   - Add location permissions above <application> tag:
+     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+6. UPDATE LAYOUT XML FILE:
+   - Go to app -> src -> main -> res -> layout -> activity_main.xml.
+   - Switch to 'Code' view and replace all content with 'activity_main.xml'.
+
+7. UPDATE JAVA FILE:
+   - Go to app -> src -> main -> java -> com.example.prac_9 -> MainActivity.java.
+   - Replace all content with 'MainActivity.java'.
+
+8. RUN THE APPLICATION:
+   - Make sure Location / GPS is turned ON on device or Emulator.
+   - Click the 'Run' button (Green play button) or press Shift + F10.
+   - When prompted, grant Location Permission ("While using the app").
+
+------------------------------------------------------------------------
+EXPECTED OUTPUT / SCREENSHOT GUIDE FOR PRACTICAL WORKBOOK:
+------------------------------------------------------------------------
+1. Permission Request Screen:
+   - When the user taps "Get Current Location", a runtime system dialog appears asking:
+     "Allow prac_9 to access this device's location?".
+   - Screenshot 1: Permission popup.
+
+2. Location Display Screen:
+   - Upon granting permission, the app fetches current latitude and longitude.
+   - Center TextView updates to show:
+     Latitude: 23.0225
+     Longitude: 72.5714
+   - Screenshot 2: Displayed latitude and longitude in TextView.
+========================================================================
